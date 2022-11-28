@@ -1,0 +1,265 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?9lrbn1');
+  src:  url('../fonts/icomoon.eot?9lrbn1#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?9lrbn1') format('truetype'),
+    url('../fonts/icomoon.woff?9lrbn1') format('woff'),
+    url('../fonts/icomoon.svg?9lrbn1#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+
+ 
+/*快捷导航栏*/
+.shortcut{
+	width: 100%;
+	height: 30px;
+	background-color:#e8e8e8;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+}
+.shortcut .left{
+	float: left;
+	padding: 0 30px;
+	line-height: 30px;
+}
+.shortcut .left a{
+	padding: 0 5px;
+}
+.shortcut .right,.right li{
+	float: right;
+	
+}
+.shortcut .right a{
+	display: block;
+	width: 85px;
+	height: 30px;
+	line-height: 30px;
+}
+.xiala::after{
+	font-family: 'icomoon';
+	content: '\e917';
+	padding: 0 3px;
+}
+.shortcut ul li a:hover{
+	background-color: rgba(204,204,204,0.5);
+	border-radius: 3px;
+	z-index: 1000;
+	
+}
+.menu{
+	position: relative;
+}
+
+.submenu1{
+	position: absolute;
+	top: 30px;
+	height:80px;
+	width: 85px;
+	display: none;
+	z-index: 99;
+}
+.submenu1 a{
+	background-color:#ffffff;
+}
+.menu:hover>.submenu1{
+	display: block;
+}
+.menu_read{
+	position: relative;
+}
+.submenu_read{
+	position: absolute;
+	top: 30px;
+	height:80px;
+	width: 85px;
+	display: none;
+	z-index: 99;
+}
+.submenu_read a{
+	background-color:#ffffff;
+}
+.menu_read:hover>.submenu_read{
+	display: block;
+}
+/*快捷导航栏end*/
+
+
+
+/*footer部分*/
+footer{
+	/*position: relative;*/
+	top: 400px;
+	font-size: 14px;
+	height: 350px;
+	width:100%;
+	background-color: gainsboro;
+}
+#footer{
+	height: 300px;
+	width:100%;
+}
+footer .footer-text{
+	height: 60px;
+	width: 300px;
+	padding-top: 30px;
+	margin: 0px auto;
+	/*margin-top: 100px;*/
+	font-size: 18px;
+	text-align: center;
+}
+footer .footer-text i::before{
+	content: "\e930";
+	font-family:'icomoon';
+	padding: 0 5px;
+	font-size: 20px;
+	line-height: 20px;
+	vertical-align:text-bottom;
+}
+footer .footer-middle{
+	width: 600px;
+	height:60px;
+	margin: 15px auto;
+	text-align: center;
+}
+footer .footer-middle ul li{
+	float: left;
+	padding:0 5px;
+		height:60px;
+		width: 130px;
+}
+footer .footer-middle ul li a{
+	/*display: block;*/
+	font-size: 15px;
+	height: 55px;
+	
+}
+footer .footer-middle ul li a i{
+	display: block;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+footer .footer-middle .middle-1::before{
+	content: "\e965";
+	font-family:'icomoon';
+	padding: 0 5px;
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align:middle;
+}
+footer .footer-middle .middle-2::before{
+	content: "\e95c";
+	font-family:'icomoon';
+	padding: 0 5px;
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align:middle;
+}
+footer .footer-middle .middle-3::before{
+	content: "\e945";
+	font-family:'icomoon';
+	padding: 0 5px;
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align:middle;
+}
+footer .footer-middle .middle-4::before{
+	content: "\e934";
+	font-family:'icomoon';
+	padding: 0 5px;
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align:middle;
+}
+footer .footer-middle ul li img:nth-child(1){
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 5px;
+}
+footer .footer-left{
+	width: 600px;
+	height: 100px;
+	margin: 0 auto;
+}
+footer .footer-left ul li{
+	float: left;
+	padding:0 20px;
+	
+}
+footer .footer-left ul li a{
+	display: block;
+	width: 100px;
+	font-size: 15px;
+	height: 100px;
+	text-align: center;
+}
+footer .footer-left ul li a i{
+	display: block;
+	
+	
+}
+footer .footer-left ul li img:nth-child(1){
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 5px;
+}
+footer .footer-bottom{
+	/*position: absolute;*/
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*定位部分*/
+.location{
+	position: fixed;
+	width: 80px;
+	height: 350px;
+	top: 200px;
+	right: 0.5%;
+	background-color: #F8F8FF;
+}
+.location ul{
+	text-align: center;
+}
+.location ul li{
+	padding-top: 5px;
+}
+.location ul li:nth-child(7) p{
+	margin-top: 15px;
+}
+.location ul li a{
+	display: block;
+	height: 37px;
+	width: 100%;
+	
+}
+.location ul li a:hover{
+	cursor: pointer;
+	
+}
+
+.location ul li a:hover .imgwx{
+	display: block;
+	
+}
+.imgwx{
+	display: none;
+	position: relative;
+	right: 200px;
+	top: -40px;
+}
+
+/* 广告 */
+.advBox{
+	width: 100%;
+	height: 150px;
+	background: rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+.close{
+	position: relative;
+	top: 0;
+	right: 20px;
+}

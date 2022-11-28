@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Mini充电站登录页面</title>
+	<link rel="icon" href="img/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<script src="js/jquery.min.js"></script>
+	<script src="js/login.js"></script>
+	<style type="text/css">
+		.login {
+			position: relative;
+			height: 1000px;
+			background-color: palegoldenrod;
+			margin: 0 auto;
+			position: relative;
+			top: 20px;
+		}
+
+		.login-middle:before {
+			font-family: 'icomoon';
+			content: '\e933';
+			padding: 0 3px;
+			font-size: 17px;
+			line-height: 17px;
+			vertical-align: middle;
+		}
+
+		.media {
+			position: relative;
+			top: 100px;
+			left: 250px;
+			width: 400px;
+			height: 400px;
+			border: 0 solid coral;
+			color: #000000;
+			background-color: rgba(0, 0, 0, 0.1);
+
+			font-size: 16px;
+			padding: 30px 0;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		.login-text {
+			font-size: 18px;
+
+		}
+
+		.login-text::before {
+			font-family: 'icomoon';
+			content: '\e971';
+			padding: 0 3px;
+
+
+		}
+
+		.media div {
+			padding: 10px 0;
+
+		}
+
+		.bg-log {
+			position: absolute;
+			float: left;
+			top: 140px;
+
+		}
+
+		.bg-log img {
+			display: block;
+			width: 600px;
+			height: 450px;
+		}
+
+		.media div input {
+			background-color: white;
+			border: 1px solid orange;
+			width: 250px;
+			height: 30px;
+			padding-left: 10px;
+		}
+
+		.media .checkbox-box {
+			font-size: 12px;
+			margin-left: 80px;
+		}
+
+		.media div .checkbox {
+			display: inline-block;
+			width: 30px;
+			height: 15px;
+			cursor: pointer;
+			vertical-align: middle;
+		}
+
+		.media div i {
+			padding-right: 15px;
+
+		}
+
+		.lo-button {
+			margin-top: 10px;
+			background-color: orange;
+			width: 80px;
+			height: 30px;
+			cursor: pointer;
+			border: 1px solid orange;
+		}
+
+		.lo-button:hover {
+			background-color: coral;
+		}
+
+		.register {
+
+			margin: 30px 0;
+			font-size: 12px;
+		}
+
+		.login .login-middle {
+			padding: 30px 0;
+			color: #000000;
+			font-size: 18px;
+			margin: 0 auto;
+			width: 200px;
+			height: 50px;
+			align-content: center;
+		}
+
+		.app {
+			height: 50px;
+			width: 400px;
+			margin: 5px 70px;
+
+		}
+
+		.app li {
+			float: left;
+			padding-left: 15px;
+			height: 30px;
+			text-align: center;
+		}
+	</style>
+
+</head>
+
+<body>
+	<a name="register-1"></a>
+	<!--快捷导航栏start-->
+	<div class="shortcut">
+		<div class="left">
+			<i><img src="img/logo.png" alt="" width="20px" height="20px" />Mini充电站欢迎您!&nbsp;&nbsp;</i>
+			<a href="login.html" target="_self">请登录</a>
+			<a href="register.html" target="_self">免费注册</a>
+		</div>
+		<div class="right">
+			<ul>
+				<li><a href="#">联系客服</a></li>
+				<li><a href="index.html" target="_self">回到首页</a></li>
+				<li><a href="#">免费加入</a></li>
+
+				<li><a href="#">我的会员</a></li>
+				<li class="menu_read"><a href="#" class="xiala">我的图书馆</a>
+					<div class="submenu_read">
+						<ul>
+							<li><a href="#">收藏夹</a></li>
+							<li><a href="#">图书架</a></li>
+							<li><a href="#">小说架</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu"><a href="#" class="xiala">网页导航</a>
+					<div class="submenu1">
+						<ul>
+							<li><a href="learn.html" target="_self">计算机类</a></li>
+							<li><a href="#">设计类</a></li>
+							<li><a href="#">语言类</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--快捷导航栏end-->
+
+	<!--login-->
+
+	<div class="login">
+		<div class="login-middle">
+			Mini充电站登录系统
+		</div>
+		<div class="bg-log">
+			<img src="img/bg-login.png" />
+		</div>
+		<div class="media">
+			<div class="login-text">
+				登录
+			</div>
+			<form action="index.html">
+				<div class="">
+					用户名：
+					<input type="text" name="uname" placeholder="请输入用户名" id="nameLogin" />
+				</div>
+				<div id="">
+					<i>密码：</i>
+					<input type="password" placeholder="密码" id="pwdLogin" />
+				</div>
+				<div class="checkbox-box">
+					<input type="checkbox" width="50px" class="checkbox" id="autoLogin" /><i><label
+							for="autoLogin">自动登录</label></i>
+					<input type="checkbox" width="50px" class="checkbox" id="memoryPwd" /><i><label
+							for="memoryPwd">记住密码</label></i>
+					<a href="#" style="color: red;"><i>找回密码</i></a>
+				</div>
+				<input type="submit" value="登录" class="lo-button" onclick="login()" />
+			</form>
+			<div class="register">
+				<a href="register.html" target="_self">还没注册 → 点击这里</a>
+				<div class="app">
+					<ul>
+						<li><a href="#"><img src="img/wx.png" width="20px" height="20px" /> 微信登录</a></li>
+						<li><a href="#"><img src="img/wb.png" width="20px" height="20px" /> 微博登录</a></li>
+						<li><a href="#"><img src="img/phone.png" width="20px" height="20px" /> 手机号登录</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--定位部分-->
+	<div class="location">
+		<ul>
+			<li><a href="register.html" target="_self"><img src="img/gift.png" width="50px" height="30px" /></a>
+			</li>
+			<li><a href="register.html" target="_self">注册有礼</a></li>
+			<li><a href="#" target="_self"><img src="img/phone1.png" width="40px" height="30px" /></a></li>
+			<li><a href="#" target="_self">在线咨询</a></li>
+			<li><a href="#" target="_self"><img src="img/wx-.png" width="40px" height="30px" class="imggz" /><img
+						src="img/wx-wechat.png" class="imgwx" width="200px" height="80px" /></a></li>
+			<li><a href="#" target="_self">关注微信</a></li>
+			<li><a href="#register-1"><img src="img/up.png" width="40px" height="30px" />
+					<p>返回顶部</p>
+				</a></li>
+
+
+		</ul>
+	</div>
+	<!--footer部分-->
+	<footer>
+		<div id="footer">
+			<div class="footer-text">
+				为什么选择Mini充电站
+				<i> </i>
+			</div>
+			<div class="footer-middle">
+				<ul>
+					<li><a href="#"><i class="middle-1">平台优势</i></a></li>
+					<li><a href="#"><i class="middle-2">在线学习</i></a></li>
+					<li><a href="#"><i class="middle-3">选择全面</i></a></li>
+					<li><a href="#"><i class="middle-4">权威合作</i></a></li>
+				</ul>
+			</div>
+			<div class="footer-left">
+				<ul>
+					<li><a href="#"><img src="img/phone.png" width="50px" height="50px" /><br /><i>联系我们</i></a></li>
+					<li><a href="#"><img src="img/zfb.png" width="50px" height="50px" /><br /><i>联系我们</i></a></li>
+					<li><a href="#"><img src="img/wb.png" width="50px" height="50px" /><br /><i>联系我们</i></a></li>
+					<li><a href="#"><img src="img/in.png" width="50px" height="50px" /><br /><i>联系我们</i></a></li>
+				</ul>
+			</div>
+			<div class="footer-bottom">
+				<p>
+					<a href="#">关于Mini充电站</a>|
+					<a href="#">客服中心</a> |
+					<a href="#">诚聘精英</a> |
+					<a href="#">联系我们</a> |
+					<a href="#">推广联盟</a> |
+				</p>
+				<p>客服热线：400-1314-0521（9:00-22:00）&nbsp;举报电话：400-004-1109</p>
+				<p></p>
+				<p>Copyright 2021 Mini充电站 版权所有&copy;</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
